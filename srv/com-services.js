@@ -1,6 +1,7 @@
 module.exports = (srv) => {
     
 	srv.before('UPDATE', (req)=>{
+        console.log('in update')
         console.log(req.user)
     });
 	srv.before('CREATE',  (req)=>{

@@ -1,0 +1,74 @@
+<mvc:View controllerName="spacefarecrud.controller.space-fare"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <Table id="idSpaceFare" items="{path: 'Galactic_Spacefarer>/galactic_spacefarer'}">
+        <columns>
+        <Column >
+        <Text text="ID"/>
+        
+        </Column>
+        <Column >
+        <Text text="NAME"/>
+        
+        </Column>
+        <Column >
+        <Text text="GENDER"/>
+        
+        </Column>
+        <Column >
+        <Text text="AGE"/>
+        
+        </Column>
+        <Column >
+        <Text text="STARDUST_COLLECTION"/>
+        
+        </Column>
+        <Column >
+        <Text text="WORMHOLE_NAV_SKILLS"/>
+        
+        </Column>
+        <Column >
+        <Text text="PLANET OF ORIGIN"/>
+        
+        </Column>
+        <Column >
+        <Text text=""/>
+        
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem >
+        <cells>
+        <Text text="{Galactic_Spacefarer>id}"/>
+        </cells>
+        <cells>
+        <Text text="{Galactic_Spacefarer>name}"/>
+        </cells>
+        <cells>
+        <Text text="{Galactic_Spacefarer>gender}"/>
+        </cells>
+        <cells>
+        <Text text="{Galactic_Spacefarer>age}"/>
+        </cells>
+        <cells>
+        <Input editable="false" value="{Galactic_Spacefarer>stardust_collection}"/>
+        </cells>
+        <cells>
+        <Input editable="false" value="{Galactic_Spacefarer>wormhole_navigation_skill}"/>
+        </cells>
+        <cells>
+        <Text text="{Galactic_Spacefarer>origin_planet}"/>
+        </cells>
+
+        <HBox >
+        <Button icon="sap-icons://edit" text="edit" press="onEdit"/>
+        <Button icon="sap-icons://delete" type="Reject" text="delete"/>
+        <Button icon="sap-icons://copy" text="duplicate"/>
+
+        </HBox>
+        </ColumnListItem>
+        </items>
+        </Table>
+    </Page>
+</mvc:View>
