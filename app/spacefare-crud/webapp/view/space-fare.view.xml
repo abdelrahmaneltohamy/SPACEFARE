@@ -52,10 +52,10 @@
         <Text text="{Galactic_Spacefarer>age}"/>
         </cells>
         <cells>
-        <Input editable="false" value="{Galactic_Spacefarer>stardust_collection}"/>
+        <Input editable="false" type="Number" value="{Galactic_Spacefarer>stardust_collection}"/>
         </cells>
         <cells>
-        <Input editable="false" value="{Galactic_Spacefarer>wormhole_navigation_skill}"/>
+        <Input editable="false" type="Number" value="{Galactic_Spacefarer>wormhole_navigation_skill}"/>
         </cells>
         <cells>
         <Text text="{Galactic_Spacefarer>origin_planet}"/>
@@ -63,8 +63,8 @@
 
         <HBox >
         <Button icon="sap-icons://edit" text="edit" press="onEdit"/>
-        <Button icon="sap-icons://delete" type="Reject" text="delete"/>
-        <Button icon="sap-icons://copy" text="duplicate"/>
+        <Button icon="sap-icons://delete" type="Reject" text="delete" press="onDelete"/>
+        <Button icon="sap-icons://copy" text="duplicate" press="onDuplicate"/>
 
         </HBox>
         </ColumnListItem>

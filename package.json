@@ -28,12 +28,14 @@
         "undeploy": "cf undeploy SPACEFARE --delete-services --delete-service-keys --delete-service-brokers",
         "build": "rimraf resources mta_archives && mbt build --mtar archive",
         "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-        "watch-galaxticcrud": "cds watch --open galaxticcrud/webapp/index.html?sap-ui-xx-viewCache=false"
+        "watch-galaxticcrud": "cds watch --open galaxticcrud/webapp/index.html?sap-ui-xx-viewCache=false",
+        "watch-galactic-spacecraft": "cds watch --open galactic-spacecraft/webapp/index.html?sap-ui-xx-viewCache=false"
     },
     "sapux": [
         "app/project1",
         "app/spacefare",
-        "app/galaxticcrud"
+        "app/galaxticcrud",
+        "app/galactic-spacecraft"
     ],
     "cds": {
         "requires": {
